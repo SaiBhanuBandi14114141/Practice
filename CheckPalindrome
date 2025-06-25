@@ -1,0 +1,18 @@
+// Check palindrome
+function palindrome(){
+var number = 1211
+
+for(let i in number.toString()){
+   
+    if(number.toString()[i] != number.toString()[number.toString().length - i - 1]){
+        console.log(number.toString())
+    console.log(false)    
+    return
+    }
+    
+}
+
+console.log(true)
+}
+
+palindrome()
