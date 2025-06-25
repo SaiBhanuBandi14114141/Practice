@@ -1,0 +1,10 @@
+// Count all Digits of a Number
+var number = 12345
+// Approach:1
+console.log(number.toString().length)
+// Approach:2
+var count = 0
+for(i of number.toString()){
+    count++
+}
+console.log(count)
