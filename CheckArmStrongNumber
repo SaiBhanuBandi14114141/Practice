@@ -1,0 +1,29 @@
+// Check armStrong Number
+// Approach:1
+function armStrong() {
+    let number = 153
+    let numberLength = number.toString().length
+    let result = 0
+    for(let i=0;i <numberLength; i++){
+       result+=Math.pow(number.toString()[i], numberLength)
+    }
+    console.log(result)
+}
+armStrong()
+
+// Approach:2
+function manual() {
+    let number = 153
+    let numberLength = number.toString().length
+    let result = 0
+    let individualValue = 0
+    for(let i=0;i <numberLength; i++){
+       individualValue = number.toString()[i] 
+       for(let j=1; j<numberLength;j++){
+           individualValue *=number.toString()[i] 
+       }
+       result = result+individualValue
+    }
+    console.log(result)
+}
+manual()
