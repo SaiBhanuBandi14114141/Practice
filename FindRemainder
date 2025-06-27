@@ -1,0 +1,4 @@
+// Find remainder
+var dividend = 7
+var divisor = 3
+console.log(dividend - Math.floor(dividend/divisor) * divisor)
