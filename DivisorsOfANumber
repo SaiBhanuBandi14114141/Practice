@@ -1,10 +1,10 @@
 // Divisors of a number
-var number = 6
+var dividend = 6
 var result = []
-for(i=1;i<=number/2;i++){
+for(i=1;i<=dividend/2;i++){
     if(number%i == 0){
         result.push(i)
     }
 }
-result.push(number)
+result.push(dividend)
 console.log(result)
